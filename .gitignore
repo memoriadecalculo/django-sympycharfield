@@ -90,6 +90,10 @@ ENV/
 env.bak/
 venv.bak/
 
+# Eclipse Pydev project settings
+.pydevproject
+.project
+
 # Spyder project settings
 .spyderproject
 .spyproject

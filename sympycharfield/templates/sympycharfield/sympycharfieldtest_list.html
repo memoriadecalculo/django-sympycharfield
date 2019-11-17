@@ -1,0 +1,12 @@
+{% load staticfiles %}
+{% block title %}TITLE{% endblock %}
+{% block doc_type %}REPORT{% endblock %}
+{% block content %}
+{% if object_list %}
+{% for item in object_list %}
+<div align="center" style="font-size:12px">{{ item.formula }}</div>
+{% endfor %}
+{% else %}
+<p>There are no formulas to show.</p>
+{% endif %}
+{% endblock %}
