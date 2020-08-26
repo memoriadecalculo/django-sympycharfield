@@ -20,7 +20,7 @@ def str2sympy(sympy_str):
 class SympyCharField(models.CharField):
     description = "Sympy Char Field"
     
-    def from_db_value(self, value, expression, connection, context):
+    def from_db_value(self, value, expression, connection, context=None):
         if value is None:
             return value
         return str2sympy(value)
