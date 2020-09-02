@@ -1,4 +1,4 @@
-from sympycharfield.models import SympyCharField
+from sympycharfield.fields import SympyCharField
 
 class SympyCharFieldTest(models.Model):
     formula = SympyCharField(max_length=255, blank=True, null=True)
