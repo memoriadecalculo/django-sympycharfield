@@ -31,7 +31,7 @@ Run the command in the terminal::
 
     path('sympycharfield/', include('sympycharfield.demo.urls')),
 
-3. Run `python manage.py makemigrations sympycharfield.demo` to create the sympycharfield models.
+3. Run `python manage.py makemigrations sympycharfield` to create the sympycharfield models.
 
 4. Run `python manage.py migrate` to create the sympycharfield models.
 
