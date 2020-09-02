@@ -14,7 +14,7 @@ Run the command in the terminal::
 ## Quick start
 1. Import in your models.py::
 
-    from sympycharfield.models import SympyCharField
+    from sympycharfield.fields import SympyCharField
 
 2. Use it as CharField.
 
