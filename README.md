@@ -1,7 +1,7 @@
 # django-sympycharfield
 Django Char Field using Sympy
 
-## Desciption
+## Description
 SympyCharField is a simple Django app to use Sympy through a CharField.
 
 Detailed documentation is in the "docs" directory.

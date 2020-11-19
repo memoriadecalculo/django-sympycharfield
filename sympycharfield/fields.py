@@ -20,7 +20,7 @@ def str2sympy(sympy_str):
 class SympyCharField(models.CharField):
     description = "Sympy Char Field"
     
-    def from_db_value(self, value, expression, connection, context):
+    def from_db_value(self, value, expression, connection, context=None):
         if value is None:
             return value
         return str2sympy(value)
@@ -38,3 +38,9 @@ class SympyCharField(models.CharField):
         self.validate(value, model_instance)
         self.run_validators(str(value))
         return value
+
+class SympyCharFieldTest(models.Model):
+    formula = SympyCharField(max_length=255, blank=True, null=True)
+    
+    def __str__(self):
+        return str(self.formula)
