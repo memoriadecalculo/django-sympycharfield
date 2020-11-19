@@ -14,7 +14,7 @@ Run the command in the terminal::
 ## Quick start
 1. Import in your models.py::
 
-    from sympycharfield.models import SympyCharField
+    from sympycharfield.fields import SympyCharField
 
 2. Use it as CharField.
 
@@ -24,14 +24,14 @@ Run the command in the terminal::
 
     INSTALLED_APPS = [
         ...
-        'sympycharfield',
+        'sympycharfield.demo',
     ]
 
 2. Include the SympyCharField URLconf in your project urls.py like this::
 
-    path('sympycharfield/', include('sympycharfield.urls')),
+    path('sympycharfield/', include('sympycharfield.demo.urls')),
 
-3. Run `python manage.py makemigrations sympycharfield` to create the sympycharfield models.
+3. Run `python manage.py makemigrations demo` to create the sympycharfield models.
 
 4. Run `python manage.py migrate` to create the sympycharfield models.
 
