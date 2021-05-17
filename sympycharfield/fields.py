@@ -38,9 +38,3 @@ class SympyCharField(models.CharField):
         self.validate(value, model_instance)
         self.run_validators(str(value))
         return value
-
-class SympyCharFieldTest(models.Model):
-    formula = SympyCharField(max_length=255, blank=True, null=True)
-    
-    def __str__(self):
-        return str(self.formula)
