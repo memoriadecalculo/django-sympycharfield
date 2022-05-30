@@ -1,5 +1,5 @@
+from .                   import models
 from django.forms.models import ModelForm
-from . import models
 
 class SympyCharFieldTest(ModelForm):
     class Meta:

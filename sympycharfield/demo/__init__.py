@@ -1,1 +1,1 @@
-default_app_config = 'sympycharfield.demo.apps.UnidConfig'
+default_app_config = 'sympycharfield.demo.apps.demoConfig'

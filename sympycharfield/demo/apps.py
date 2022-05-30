@@ -1,5 +1,4 @@
 from django.apps import AppConfig
 
-
-class UnidConfig(AppConfig):
-    name = 'sympycharfield'
+class demoConfig(AppConfig):
+    name = 'sympycharfield.demo'

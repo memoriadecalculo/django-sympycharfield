@@ -4,8 +4,6 @@ Django Char Field using Sympy
 ## Description
 SympyCharField is a simple Django app to use Sympy through a CharField.
 
-Detailed documentation is in the "docs" directory.
-
 ## Install
 Run the command in the terminal::
 
@@ -14,13 +12,13 @@ Run the command in the terminal::
 ## Quick start
 1. Import in your models.py::
 
-    from sympycharfield.fields import SympyCharField
+    from sympycharfield.models import SympyCharField
 
 2. Use it as CharField.
 
 ## Test
 1. If you would like to check if SympyCharField is working fine, add
-"SympyCharField" to your INSTALLED_APPS setting like this::
+SympyCharField demo application to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...
@@ -29,6 +27,8 @@ Run the command in the terminal::
 
 2. Include the SympyCharField URLconf in your project urls.py like this::
 
+    from django.urls import include
+    ...
     path('sympycharfield/', include('sympycharfield.demo.urls')),
 
 3. Run `python manage.py makemigrations demo` to create the sympycharfield models.

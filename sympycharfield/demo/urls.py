@@ -1,5 +1,5 @@
+from .                import views
 from django.conf.urls import url
-from . import views
 
 urlpatterns = [
     url(r'^$', views.SympyCharFieldTestList.as_view(), name='formulas'),

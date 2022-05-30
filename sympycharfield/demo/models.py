@@ -1,6 +1,5 @@
-from django.db import models
-
-from sympycharfield.fields import SympyCharField
+from django.db                    import models
+from sympycharfield.models        import SympyCharField
 
 class SympyCharFieldTest(models.Model):
     formula = SympyCharField(max_length=255, blank=True, null=True)
