@@ -93,7 +93,7 @@ venv.bak/
 # Eclipse Pydev project settings
 .pydevproject
 .project
-settings
+.settings/
 
 # Spyder project settings
 .spyderproject
