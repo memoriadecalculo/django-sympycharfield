@@ -22,5 +22,8 @@ def str2sympy(sympy_str):
     for k, v in u.__dict__.items(): 
         if (isinstance(v, Expr) and v.has(u.Unit)) or isinstance(v, Integer): 
             subs[Symbol(k)] = v
-    return sympify(sympy_str).subs(subs)
+    if sympify(sympy_str) is None:
+        return None
+    else:
+        return sympify(sympy_str).subs(subs)
 
